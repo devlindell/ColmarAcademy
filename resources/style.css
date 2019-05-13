@@ -1,0 +1,46 @@
+html {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+}
+
+
+h1 h2 h3 h4 {
+  font-family: 'Patua One', sans-serif;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 64px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo h3 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 0.5rem;
+}
+
+.mobile-menu {
+  display: none;
+}
