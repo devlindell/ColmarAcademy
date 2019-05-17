@@ -1,0 +1,41 @@
+.small-imgage-container {
+  width: 40%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.small-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  height: auto;
+  background-color: red;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+}
+
+.text-container {
+  width: 60%;
+  align: left;
+  padding: 16px;
+}
+
+.right-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.left-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+}

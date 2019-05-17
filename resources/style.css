@@ -3,9 +3,11 @@ html {
   background-color: rgb(240, 240, 240);
   font-family: 'Noto Serif', serif;
   font-size: 16px;
-  line-height: 2.5;
 }
 
+body {
+  line-height: 1.75;
+}
 
 h1, h2, h3, h4 {
   font-family: 'Patua One', sans-serif;
@@ -13,6 +15,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3rem;
+  line-height: normal;
 }
 
 h2 {
@@ -25,6 +28,11 @@ h3 h4 {
 
 h4 {
   font-variant: small-caps;
+}
+
+a:hover {
+  color: #56B0FF;
+  transition: color 250ms linear 10ms;
 }
 
 
@@ -130,14 +138,13 @@ li {
 .small-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .small-container-text {
   max-width: 65%;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
 }
 
 .course-holder {
@@ -168,4 +175,38 @@ li {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+.thesis {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: inherit;
+}
+
+.thesis-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.thesis-video {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.thesis-video-text {
+  text-align: left;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.footer {
+  background-color: rgb(220, 220, 220);
+  border-top: rgb(200, 200, 200) solid 1px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
