@@ -71,14 +71,6 @@ li {
   display: none;
 }
 
-/* Mobile devices */
-@media only screen and (max-width: 600px) {
-  
-
-
-}
-
-
 .jumbotron {
   background-color: rgb(220, 220, 220);
   padding: 2rem 0;
@@ -88,7 +80,7 @@ li {
 }
 
 .slogan {
-  max-width: 30%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,6 +185,10 @@ li {
   margin-bottom: 1rem;
 }
 
+.course-mobile {
+  display: none;
+}
+
 .thesis {
   padding: 2rem 1rem;
   text-align: center;
@@ -209,6 +205,7 @@ li {
   height: auto;
   max-width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .thesis-video-text {
@@ -225,4 +222,76 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 800px) {
+
+  h1 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 h4 {
+    font-size: 1rem;
+  }
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: block;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan {
+  width: 80%;
+}
+
+.jumbotron .left-container {
+  display: block;
+}
+
+.left-container {
+  display: none;
+}
+
+.right-container {
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.all-courses {
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.course {
+  display: none;
+}
+
+.course-mobile {
+  display: block;
+  width: 60%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.course-img {
+  max-width: 40%;
+}
+
 }
